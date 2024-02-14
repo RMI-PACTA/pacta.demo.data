@@ -8,3 +8,9 @@ default_values <- list(
   # one_adr_eq typically has values of 1, 0.25, 0.33, and other perfect fractions
   one_adr_eq = 1/4
 )
+
+`%||%` <- function(x, y) {
+  if (is_null(x))
+    y
+  else x
+}
