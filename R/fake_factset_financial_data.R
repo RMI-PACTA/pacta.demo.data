@@ -1,8 +1,17 @@
 #' Minimal fake `factset_financial_data` dataset that allow overwriting values
 #'
 #' @template fake_data
+#' @param fsym_id A FactSet FSYM ID (character).
+#' @param isin An ISIN (character).
+#' @param factset_entity_id A FactSet Entity ID (character).
+#' @param adj_price Adjusted price (numeric).
+#' @param adj_shares_outstanding Adjusted shares outstanding (numeric).
+#' @param issue_type Issue type (character).
+#' @param one_adr_eq One ADR equivalent (numeric).
+#' @param ... Arguments passed on to [tibble::tibble()]. These are useful in
+#'   case you want to add additional columns to the output tibble.
 #'
-#' @return A data.frame
+#' @return A tibble
 #' @export
 #'
 #' @examples

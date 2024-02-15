@@ -15,8 +15,26 @@ fake_factset_financial_data(
   ...
 )
 }
+\arguments{
+\item{fsym_id}{A FactSet FSYM ID (character).}
+
+\item{isin}{An ISIN (character).}
+
+\item{factset_entity_id}{A FactSet Entity ID (character).}
+
+\item{adj_price}{Adjusted price (numeric).}
+
+\item{adj_shares_outstanding}{Adjusted shares outstanding (numeric).}
+
+\item{issue_type}{Issue type (character).}
+
+\item{one_adr_eq}{One ADR equivalent (numeric).}
+
+\item{...}{Arguments passed on to \code{\link[tibble:tibble]{tibble::tibble()}}. These are useful in
+case you want to add additional columns to the output tibble.}
+}
 \value{
-A data.frame
+A tibble
 }
 \description{
 Minimal fake \code{factset_financial_data} dataset that allow overwriting values
