@@ -36,7 +36,7 @@ fake_factset_financial_data <- function(fsym_id = NULL,
     if_arg_exists_check_valid_type(one_adr_eq, is.numeric)
   )
 
-    tibble::tibble(
+  tibble::tibble(
     fsym_id = fsym_id %||% default_values[["fsym_id"]],
     isin = isin %||% default_values[["isin"]],
     factset_entity_id =
