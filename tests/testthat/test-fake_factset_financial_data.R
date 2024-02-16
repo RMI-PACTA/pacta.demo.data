@@ -75,17 +75,6 @@ test_that("default output has expected values", {
 })
 
 test_that("with bad data, errors informatively", {
-
-  args <- c(
-    "fsym_id",
-    "isin",
-    "factset_entity_id",
-    "adj_price",
-    "adj_shares_outstanding",
-    "issue_type",
-    "one_adr_eq"
-  )
-
   expect_error(fake_factset_financial_data(fsym_id = FALSE))
   expect_error(fake_factset_financial_data(isin = FALSE))
   expect_error(fake_factset_financial_data(factset_entity_id = FALSE))
