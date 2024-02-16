@@ -1,8 +1,8 @@
 test_that("default output is 1-row 7-col tibble", {
   out <- fake_factset_financial_data()
+  expect_s3_class(out, "tbl")
   expect_equal(nrow(out), 1L)
   expect_equal(ncol(out), 7L)
-  expect_true(inherits(out, "tbl_out") || inherits(out, "tbl"))
 })
 
 test_that("handles input args as expected", {
