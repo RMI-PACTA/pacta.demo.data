@@ -49,7 +49,3 @@ fake_factset_financial_data <- function(fsym_id = NULL,
     ...
   )
 }
-
-if_arg_exists_check_valid_type <- function(arg, fun) {
-  if (!is.null(arg)) fun(arg) else TRUE
-}
