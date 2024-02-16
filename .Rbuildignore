@@ -3,5 +3,7 @@
 ^LICENSE\.md$
 ^README\.Rmd$
 ^cran-comments\.md$
+^man-roxygen$
 ^\.github$
 ^codecov\.yml$
+^data-raw$
