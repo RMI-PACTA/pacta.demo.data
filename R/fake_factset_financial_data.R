@@ -11,7 +11,7 @@
 #' @param ... Arguments passed on to [tibble::tibble()]. These are useful in
 #'   case you want to add additional columns to the output tibble.
 #'
-#' @return A tibble
+#' @return A tibble with the specified columns.
 #' @export
 #'
 #' @examples

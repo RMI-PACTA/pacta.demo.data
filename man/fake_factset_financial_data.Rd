@@ -34,7 +34,7 @@ fake_factset_financial_data(
 case you want to add additional columns to the output tibble.}
 }
 \value{
-A tibble
+A tibble with the specified columns.
 }
 \description{
 Minimal fake \code{factset_financial_data} dataset that allow overwriting values
